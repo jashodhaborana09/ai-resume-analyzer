@@ -1,79 +1,270 @@
-# AI Resume Analyzer
+# 🚀 AI Resume Analyzer
 
-A production-ready AI Resume Analyzer built with modern MERN architecture and Gemini API integration.
+An AI-powered Resume Analysis and Job Matching platform that helps candidates optimize their resumes, improve ATS scores, and align their profiles with job descriptions using Generative AI.
 
-## Features
+## 🌐 Live Demo
 
-- Secure JWT authentication with registration, login, and protected routes
-- Resume upload with drag-and-drop, PDF/DOCX validation, and upload progress
-- Resume parsing for name, email, phone, education, skills, experience, certifications, and projects
-- AI-powered analysis using Google Gemini API with ATS score, skill analysis, recruiter feedback, and suggestions
-- Job description matching with match percentage, missing skills, and optimization tips
-- Resume history with downloadable PDF reports and delete history
-- Responsive dashboard with Recharts, animated cards, and dark mode
-- Bonus AI cover letter generator and interview question generator
+**Frontend:** https://ai-resume-analyzer-frontend-sigma.vercel.app
 
-## Tech Stack
+**Backend API:** https://ai-resume-analyzer-zr9w.onrender.com
 
-- Frontend: React 19, Vite, Tailwind CSS, React Router, Axios, Framer Motion, React Hook Form, React Hot Toast, Recharts
-- Backend: Node.js, Express.js, MongoDB Atlas, Mongoose, JWT, Multer, pdf-parse, dotenv, bcryptjs
-- AI: Google Gemini API
-- Deployment: Vercel (frontend), Render (backend)
+---
 
-## Installation
+## 📌 Overview
 
-1. Clone the repository.
-2. Install dependencies from the root:
+AI Resume Analyzer is a full-stack web application designed to help students, job seekers, and professionals improve their resumes using AI-driven insights.
+
+The platform analyzes uploaded resumes, generates ATS-friendly recommendations, evaluates strengths and weaknesses, and compares resumes against job descriptions to provide a match score and optimization suggestions.
+
+---
+
+## ✨ Features
+
+### 📄 Resume Upload & Parsing
+
+* Upload PDF resumes
+* Extract resume content automatically
+* Store resume history
+
+### 🤖 AI Resume Analysis
+
+* ATS Score Generation
+* Resume Summary
+* Missing Skills Detection
+* Recruiter Feedback
+* Resume Improvement Suggestions
+
+### 🎯 Job Description Matching
+
+* Compare resume with job descriptions
+* Match Percentage Calculation
+* Matching Skills Identification
+* Missing Skills Detection
+* Recommended Keywords
+* Optimization Tips
+
+### 🔐 Authentication System
+
+* User Registration
+* Secure Login
+* JWT Authentication
+* Protected Routes
+
+### 📊 Dashboard
+
+* Resume Analysis History
+* ATS Score Tracking
+* Job Match Results
+* User Profile Management
+
+### 🌙 Modern UI
+
+* Responsive Design
+* Dark Mode Support
+* Mobile-Friendly Interface
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* React Router
+* Tailwind CSS
+* Axios
+* React Hot Toast
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB Atlas
+* Mongoose
+* JWT Authentication
+* Multer
+
+### AI Integration
+
+* OpenRouter API
+* Google Gemini Models
+
+### Deployment
+
+* Vercel (Frontend)
+* Render (Backend)
+* MongoDB Atlas (Database)
+
+---
+
+## 🏗️ System Architecture
+
+User → React Frontend → Express Backend → OpenRouter AI
+
+User → React Frontend → Express Backend → MongoDB Atlas
+
+---
+
+## 📁 Project Structure
 
 ```bash
+AI-Resume-Analyzer/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.jsx
+│   │
+│   └── package.json
+│
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   ├── uploads/
+│   └── server.js
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/jashodhaborana09/ai-resume-analyzer.git
+
+cd ai-resume-analyzer
+```
+
+### Backend Setup
+
+```bash
+cd backend
+
 npm install
 ```
 
-3. Create environment files:
+Create `.env`
 
-- `backend/.env`
-- `frontend/.env`
+```env
+MONGO_URI=your_mongodb_connection_string
 
-4. Run the development stack:
+JWT_SECRET=your_jwt_secret
+
+CLIENT_URL=http://localhost:5173
+
+PORT=5000
+
+OPENROUTER_API_KEY=your_openrouter_api_key
+```
+
+Run Backend
 
 ```bash
 npm run dev
 ```
 
-## Environment Variables
+### Frontend Setup
 
-### Backend
+```bash
+cd frontend
 
-```env
-PORT=5000
-MONGO_URI=your_mongodb_atlas_connection_string
-JWT_SECRET=your_jwt_secret
-GEMINI_API_KEY=your_google_gemini_api_key
-GEMINI_MODEL=gemini-1.5-pro
-CLIENT_URL=http://localhost:5173
+npm install
 ```
 
-### Frontend
+Create `.env`
 
 ```env
 VITE_API_URL=http://localhost:5000/api
 ```
 
-## Local Setup
+Run Frontend
 
-- Frontend available at `http://localhost:5173`
-- Backend available at `http://localhost:5000`
+```bash
+npm run dev
+```
 
-## Deployment
+---
 
-- Frontend: Deploy the `frontend` folder to Vercel and set `VITE_API_URL` to your backend URL.
-- Backend: Deploy the `backend` folder to Render and set environment variables.
-- Database: Use MongoDB Atlas and add the backend host to the allowed IP list.
+## 🔑 Environment Variables
 
-## Future Enhancements
+### Backend
 
-- LinkedIn profile analyzer
-- Resume version comparison
-- Admin analytics dashboard
-- Multi-language support
-- Email delivery for generated reports
+```env
+MONGO_URI=
+JWT_SECRET=
+CLIENT_URL=
+PORT=
+OPENROUTER_API_KEY=
+```
+
+### Frontend
+
+```env
+VITE_API_URL=
+```
+
+---
+
+## 📈 Future Enhancements
+
+* Resume PDF Report Generation
+* Resume Version Tracking
+* AI Interview Preparation
+* Resume Templates Generator
+* LinkedIn Profile Analyzer
+* Career Roadmap Suggestions
+* Multi-language Resume Analysis
+* Advanced ATS Simulation
+
+---
+
+## 🧠 Learning Outcomes
+
+Through this project:
+
+* Built a production-ready MERN application
+* Integrated Generative AI APIs
+* Implemented JWT Authentication
+* Managed cloud database deployment
+* Deployed full-stack applications
+* Solved real-world CORS, API, and deployment challenges
+
+---
+
+## 👨‍💻 Author
+
+### Jashodha Borana
+
+B.Tech Student | Aspiring Software Engineer | AI & Full Stack Enthusiast
+
+GitHub:
+https://github.com/jashodhaborana09
+
+LinkedIn:
+(Add your LinkedIn profile URL)
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a star on GitHub.
+
+⭐ Star the repository
+🍴 Fork the project
+📢 Share with others
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
