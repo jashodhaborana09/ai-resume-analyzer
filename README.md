@@ -1,10 +1,9 @@
 # 🚀 AI Resume Analyzer
-![Visitors](https://komarev.com/ghpvc/?username=jashodhaborana09&style=for-the-badge&color=blue)
+
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
 ![Deployment](https://img.shields.io/badge/Deployment-Live-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-blue?style=for-the-badge)
-![Open Source](https://img.shields.io/badge/Open%20Source-Yes-success?style=for-the-badge)
+
 An AI-powered Resume Analysis and Job Matching platform that helps candidates optimize their resumes, improve ATS scores, and align their profiles with job descriptions using Generative AI.
 
 ## 🌐 Live Demo
